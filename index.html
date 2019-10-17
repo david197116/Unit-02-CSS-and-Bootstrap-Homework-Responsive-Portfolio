@@ -57,13 +57,17 @@
         border-top: 3px solid #cccccc;
     }
 
+    .img-fluid {
+        max-width: 100%;
+        max-height: auto;
+     
+    }
 
     #ProfilePicture {
-        float: left;
         width: 220px;
         height: 220px;
-        padding: 20px;
-    }
+        padding: 20px;  
+    } 
 
     /* Sticky footer */
     .footer {
@@ -79,10 +83,10 @@
     }
 
     /*  Media Queries to resize screen */
-    @media screen and (max-width: 768px) {
+        @media screen and (max-width: 768px) { 
         .container {
             width: 100%;
-        }
+        } 
     }
 </style>
 
@@ -95,32 +99,44 @@
                 <h1>David I Riveraperez</h1>
             </div>
 
-            <!-- Navbar Justify Content -->
-            <div class="col-4 col-2" id="nav-menu">
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+            <!-- Bootstrap Collapasible Navbar-->
+            <div class="col-5 col-4 col-3 col -2">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="https://getbootstrap.com/docs/4.0/components/navbar/">Navbar</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                              <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="index.html">AboutMe<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </nav>
+       
             </div>
         </div>
 
         <div class="row" id="about-me">
-            <div class="col">
+            <div class="col-lg-auto col-md-auto col-sm-auto col-auto">
                 <h2>About Me</h2>
             </div>
         </div>
 
-        <!-- Row Justify Content Start -->
-        <div class="row justify-content-lg-start" id="main-content">
-            <div class="col-lg-auto col-md-auto cd-sm-auto cd-auto">
-                <img id="ProfilePicture" src="images/Profilepicture.jpg" class=" img-fluid" alt="David Riveraperez">
+        <!-- Row -->
+        <div class="row" id="main-content">
+            <div class="col-lg-auto col-md-auto col-sm-auto col-auto">
+                <img id="ProfilePicture" src="images/Profilepicture.jpg" class="img-fluid" alt="David Riveraperez">
+            </div>
+
+            <div class="col-lg col-md-auto col-sm-auto col-auto">
                 <p>I am 49 yrs old from Puerto Rico, married with two adult children. I retired from the military 8
                     years ago after serving in the US Army over 20 years. I have been working in finance since then and
                     looking for a new career change. Family is very important to me and the motivation
@@ -135,7 +151,7 @@
 
         <!-- footer -->
         <footer class="footer">
-            <span class="text-muted">Copyright</span>
+            <span class="text-muted"> Puerto Rican Copyright</span>
         </footer>
     </div>
 
